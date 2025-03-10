@@ -148,7 +148,7 @@ p, h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    > h2 {
+    & h2 {
         font-size: 24px;
         border: 1px solid #584D62;
         width: 56px;
@@ -160,14 +160,14 @@ p, h1, h2, h3, h4, h5, h6 {
         font-family: "MyFont", serif;
         margin-bottom: 56px;
     }
-    > h1 {
+    & h1 {
         font-family: "MyFont", serif;
         color: #24053E;
         font-size: 32px;
         line-height: 120%;
         margin-bottom: 28px;
     }
-    > p {
+    & p {
         font-size: 18px;
         line-height: 180%;
     }
@@ -257,5 +257,196 @@ p, h1, h2, h3, h4, h5, h6 {
     }
     > img:hover {
         filter: brightness(50%)
+    }
+}
+
+@media (width < 1470px) {
+    .full-page {
+        width: 768px;
+    }
+
+    .hero {
+        width: 100%;
+        height: auto;
+    }
+
+    .header {
+        padding: 32px 44px 0 44px;
+    }
+
+    .data-tailored {
+        height: 473px;
+        > h1 {
+            font-size: 60px;
+            width: 485px;
+        }
+    }
+
+    .bg-pattern-1 {
+        width: 270px;
+        top: 9px;
+        left: -180px;
+    }
+
+    .bg-pattern-2 {
+        width: 141px;
+        top: 195px;
+        right: -80px;
+    }
+
+    .phone {
+        height: 296px;
+        width: 602px;
+        top: 313px;
+    }
+
+    .number-section {
+        padding: 192px 44px 116px 44px;
+        grid-template-columns: 1fr;
+    }
+
+    .number {
+        display: grid;
+        grid-template-columns: 48px 1fr;
+        gap: 56px;
+        > h2 {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 0;
+            font-size: 20px;
+            text-align: center;
+        }
+        > div {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            > h1 {
+                font-size: 28px;
+            }
+            > p {
+                font-size: 16px;
+                text-align: left;
+            }
+        }
+    }
+
+    .user-section {
+        padding-left: 44px;
+        > img {
+            width: 280px;
+            height: 280px;
+        }
+    }
+
+    .user-content {
+        width: 504px;
+        height: 390px;
+        right: 44px;
+        padding: 48px;
+        > h1 {
+            font-size: 48px;
+        }
+        > p {
+            font-size: 16px;
+        }
+    }
+
+    .bg-pattern-3 {
+        right: 13px;
+        top: 292px;
+    }
+
+    .footer {
+        padding: 258px 0 80px 0 ;
+    }
+}
+
+@media (width < 800px) {
+
+    .bg-pattern-1, .bg-pattern-2, .bg-pattern-3 {
+        display: none;
+    }
+
+    .full-page {
+        width: 100%;
+    }    
+    .header {
+        padding: 32px 20px 0 20px;
+    }
+
+    .data-tailored {
+        padding: 56px 20px;
+        height: 420px;
+        > h1 {
+            font-size: 48px;
+            width: auto;
+            max-width: 335px;
+        }
+        > a {
+            font-size: 16px;
+        }
+    }
+
+    .phone {
+        width: 298px;
+        height: auto;
+        top: 310px;
+    }
+
+    .number-section {
+        padding: 144px 20px 88px 20px;
+        gap: 32px;
+    }
+
+    .number {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 24px;
+        > div {
+            align-items: center;
+            gap: 16px;
+            > p {
+                text-align: center;
+            }
+            > h1 {
+                margin-bottom: 0;
+                font-size: 24px;
+            }
+        }
+    }
+
+    .user-section {
+        padding: 48px;
+        > img {
+            margin: 0 auto;
+            width: 280px;
+            height: 280px;
+        }
+    }
+
+    .user-content {
+        width: 335px;
+        padding: 32px;
+        left: 50%;
+        transform: translateX(-50%);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        > h1 {
+            font-size: 32px;
+        }
+        > p {
+            font-size: 16px;
+        }
+        > a {
+            font-size: 16px;
+        }
+    }
+
+    .footer {
+        padding: 380px 80px 80px 80px;
     }
 }

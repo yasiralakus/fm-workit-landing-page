@@ -33,20 +33,26 @@ export default function App() {
 
                 <div className="number">
                     <h2>1</h2>
-                    <h1>Actionable insights</h1>
-                    <p>Optimize your products, improve customer satisfaction and stay ahead of the competition with our product data analytics.</p>
+                    <div>
+                        <h1>Actionable insights</h1>
+                        <p>Optimize your products, improve customer satisfaction and stay ahead of the competition with our product data analytics.</p>
+                    </div>
                 </div>
 
                 <div className="number">
                     <h2>2</h2>
-                    <h1>Data-driven decisions</h1>
-                    <p>Make data-driven decisions with our product data analytics. Our AI-generated reports help you unlock insights hidden in your product data.</p>
+                    <div>
+                        <h1>Data-driven decisions</h1>
+                        <p>Make data-driven decisions with our product data analytics. Our AI-generated reports help you unlock insights hidden in your product data.</p>
+                    </div>
                 </div>
 
                 <div className="number">
                     <h2>3</h2>
-                    <h1>Always affordable</h1>
-                    <p>Always affordable pricing that scales with your business. Get top-quality product data analytics services without hidden costs or unexpected fees.</p>
+                    <div>
+                        <h1>Always affordable</h1>
+                        <p>Always affordable pricing that scales with your business. Get top-quality product data analytics services without hidden costs or unexpected fees.</p>
+                    </div>
                 </div>
 
             </div>
